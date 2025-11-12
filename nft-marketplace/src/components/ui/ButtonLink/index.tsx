@@ -9,6 +9,7 @@ export type ButtonLinkProps = Omit<
   children: React.ReactNode
   startIcon?: React.ReactNode
   className?: string
+  narrow?: boolean
 }
 
 export default function ButtonLink({
@@ -16,21 +17,24 @@ export default function ButtonLink({
   children,
   startIcon,
   className = "",
+  narrow = false,
   ...rest
 }: ButtonLinkProps) {
   return (
     <Link
       to={to}
       className={
-        `inline-flex items-center gap-3 h-[60px] px-[30px] py-3 rounded-[20px] ` +
+        `inline-flex items-center gap-3 h-15 ${
+          narrow ? "px-7.5" : "px-12.5"
+        } py-3 rounded-[20px] ` +
         `bg-(--color-primary) text-white! font-extrabold shadow-sm ` +
-        `hover:opacity-95 transition select-none ` +
+        `hover:opacity-90 transition select-none ` +
         className
       }
       {...rest}
     >
       {startIcon ? (
-        <span className="inline-flex items-center justify-center">{startIcon}</span>
+        <span className="inline-flex items-center justify-center w-5 h-5">{startIcon}</span>
       ) : null}
       <span>{children}</span>
     </Link>

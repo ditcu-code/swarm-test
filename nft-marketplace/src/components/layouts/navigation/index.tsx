@@ -22,7 +22,7 @@ export default function Navigation() {
             Connect a wallet
           </Link>
 
-          <ButtonLink to="/home" startIcon={<img src={UserIcon} alt="User" className="w-5 h-5" />}>
+          <ButtonLink to="/home" startIcon={<img src={UserIcon} alt="User" />} narrow>
             Sign Up
           </ButtonLink>
         </div>

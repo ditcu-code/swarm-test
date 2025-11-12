@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import Logo from "../../../assets/icons/nav/logo.svg"
 import UserIcon from "../../../assets/icons/User.svg"
+import ButtonLink from "../../ui/ButtonLink"
 
 export default function Navigation() {
   return (
@@ -21,14 +22,9 @@ export default function Navigation() {
             Connect a wallet
           </Link>
 
-          <Link
-            to="/home"
-            className="font-semibold! px-[30px] inline-flex items-center gap-3 h-[60px] bg-(--color-primary) text-white! py-3 rounded-[20px] shadow-sm hover:opacity-95 transition select-none"
-          >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={UserIcon} alt="User" className="w-5 h-5" />
-            <span>Sign Up</span>
-          </Link>
+          <ButtonLink to="/home" startIcon={<img src={UserIcon} alt="User" className="w-5 h-5" />}>
+            Sign Up
+          </ButtonLink>
         </div>
       </div>
     </header>

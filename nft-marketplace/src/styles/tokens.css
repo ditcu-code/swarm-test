@@ -1,0 +1,27 @@
+:root {
+  --color-background: #2b2b2b; /* page background */
+  --color-surface: #3b3b3b; /* cards/headers/borders */
+  --color-muted: #858584; /* muted text */
+  --color-text: #ffffff; /* primary text */
+
+  --color-primary: #a259ff; /* call-to-action */
+  --color-blue: #377df7; /* gradient stop */
+  --color-coral: #ff6250; /* gradient stop */
+
+  /* Optional alias for borders */
+  --color-border: var(--color-surface);
+
+  --gradient-primary-blue: linear-gradient(170deg, var(--color-primary) 0%, var(--color-blue) 100%);
+  --gradient-primary-coral: linear-gradient(
+    149deg,
+    var(--color-primary) 0%,
+    var(--color-coral) 100%
+  );
+}
+
+.bg-gradient-primary-blue {
+  background-image: var(--gradient-primary-blue);
+}
+.bg-gradient-primary-coral {
+  background-image: var(--gradient-primary-coral);
+}

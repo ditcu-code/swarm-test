@@ -1,0 +1,103 @@
+/* Load design tokens first so Tailwind can use them */
+@import "./tokens.css";
+@import "tailwindcss";
+
+:root {
+  font-family: "Work Sans", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark; /* palette is dark-first */
+  color: var(--color-text);
+  background-color: var(--color-background);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: var(--color-primary);
+  text-decoration: inherit;
+}
+a:hover {
+  opacity: 0.9;
+}
+
+body {
+  margin: 0;
+  /* Use normal page flow so layout can span full width */
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+/* Ensure the app container fills the viewport width */
+#root {
+  width: 100%;
+}
+
+h1 {
+  font-size: 67px;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 51px;
+  line-height: 1.1;
+}
+
+h3 {
+  font-size: 38px;
+  line-height: 1.2;
+}
+
+h4 {
+  font-size: 28px;
+  line-height: 1.4;
+}
+
+h5 {
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+base {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+caption {
+  font-size: 12px;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--color-surface);
+  cursor: pointer;
+  transition: border-color 0.25s, background-color 0.25s;
+}
+button:hover {
+  border-color: var(--color-primary);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Optional light mode mapping, if enabled later */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--color-text);
+    background-color: var(--color-background);
+  }
+}

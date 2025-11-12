@@ -1,5 +1,6 @@
 import RocketLaunchIcon from "../../assets/icons/RocketLaunch.svg"
 import ButtonLink from "../../components/ui/ButtonLink"
+import { ThreeScene } from "./ThreeScene"
 
 type Stat = { label: string; value: string }
 
@@ -38,7 +39,9 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <div className="basis-1/2"></div>
+        <div className="basis-1/2">
+          <ThreeScene />
+        </div>
       </div>
     </div>
   )

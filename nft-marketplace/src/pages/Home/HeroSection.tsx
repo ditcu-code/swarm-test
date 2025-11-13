@@ -13,9 +13,11 @@ const stats: Stat[] = [
 export default function HeroSection() {
   return (
     <div className="w-full flex justify-center">
-      <div className="w-5xl flex flex-row py-20">
+      <div className="flex flex-col sm:flex-row py-20 ">
         <div className="basis-1/2 text-left">
-          <h1 className="font-semibold mb-5">Discover Digital Art & Collect NFTs</h1>
+          <h4 className="font-semibold mb-5 sm:text-[38px]! lg:text-[67px]!">
+            Discover Digital Art & Collect NFTs
+          </h4>
           <div className="gap-7.5 flex flex-col">
             <p>
               Nft Marketplace Ui Created With Anima For Figma. Collect, Buy And Sell Art From More
@@ -31,7 +33,9 @@ export default function HeroSection() {
             <div className="inline-flex gap-7.5">
               {stats.map((s) => (
                 <div key={s.label}>
-                  <h4 className="font-bold w-37.5 font-['Space_Mono']">{s.value}</h4>
+                  <h5 className="lg:text-[22px]! font-bold lg:w-37.5 font-['Space_Mono']">
+                    {s.value}
+                  </h5>
                   <p>{s.label}</p>
                 </div>
               ))}

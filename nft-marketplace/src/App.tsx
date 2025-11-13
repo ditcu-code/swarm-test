@@ -6,9 +6,11 @@ function App() {
   return (
     <>
       <Navigation />
-      <Routes>
-        <Route path="/home" element={<Home />} />
-      </Routes>
+      <div className="mx-7.5 sm:mx-18 lg:mx-29">
+        <Routes>
+          <Route path="/home" element={<Home />} />
+        </Routes>
+      </div>
     </>
   )
 }

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import ListIcon from "../../../assets/icons/List.svg"
 import Logo from "../../../assets/icons/nav/logo.svg"
 import UserIcon from "../../../assets/icons/User.svg"
 import ButtonLink from "../../ui/ButtonLink"
@@ -11,7 +12,7 @@ export default function Navigation() {
           <img src={Logo} alt="NFT Marketplace" className="md:h-10 w-[243px] h-[32px]" />
         </Link>
 
-        <div className="flex items-center gap-2.5">
+        <div className="hidden lg:flex items-center gap-2.5">
           <Link to="/home" className="font-semibold! px-5 text-white! hover:opacity-90">
             Marketplace
           </Link>
@@ -25,6 +26,10 @@ export default function Navigation() {
           <ButtonLink to="/home" startIcon={<img src={UserIcon} alt="User" />} narrow>
             Sign Up
           </ButtonLink>
+        </div>
+
+        <div className="inline-flex items-center justify-end lg:hidden">
+          <img src={ListIcon} alt="Open navigation menu" className="h-8 w-8" />
         </div>
       </div>
     </header>

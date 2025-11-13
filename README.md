@@ -42,6 +42,7 @@ Tailwind usage notes
 
 ## Tech Decisions & Trade‑offs
 
+- I invested significant time in setting up and organizing a clean, scalable project folder structure to ensure future work can be faster and more maintainable. As a result, the current UI coverage is limited, but this foundation will support rapid development going forward.
 - Created a minimal Redux example, though it's not actively used
 
 ## Improvements With More Time

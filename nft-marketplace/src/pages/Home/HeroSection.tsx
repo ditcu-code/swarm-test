@@ -15,7 +15,7 @@ export default function HeroSection() {
     <div className="w-full flex justify-center">
       <div className="flex flex-col sm:flex-row py-20 ">
         <div className="basis-1/2 text-left">
-          <h4 className="font-semibold mb-5 sm:text-[38px]! lg:text-[67px]!">
+          <h4 className="font-semibold mb-5 sm:text-[38px]! lg:text-[67px]! lg:leading-[1.1]!">
             Discover Digital Art & Collect NFTs
           </h4>
           <div className="gap-7.5 flex flex-col">
